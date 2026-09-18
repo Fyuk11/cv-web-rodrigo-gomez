@@ -70,12 +70,12 @@ export default function Hero() {
         </motion.div>
 
         {/* Columna Derecha: Foto Duotono y Fondo Accent */}
-        {/* Detalle Suave #3: Radio de 72px SOLO en la esquina inferior izquierda */}
+        {/* Detalle Suave #3: Radio de 72px SOLO en la esquina inferior izquierda con efecto Hover Reveal */}
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.4 }}
-          className="lg:col-span-5 bg-accent min-h-[380px] lg:min-h-full relative overflow-hidden flex items-end justify-center rounded-bl-[72px]"
+          className="lg:col-span-5 bg-accent min-h-[380px] lg:min-h-full relative overflow-hidden flex items-end justify-center rounded-bl-[72px] group cursor-pointer"
         >
           <img
             src="/profile.png"
@@ -84,7 +84,7 @@ export default function Hero() {
               e.target.style.display = 'none';
               e.target.nextSibling.style.display = 'flex';
             }}
-            className="w-full h-full object-cover grayscale contrast-150 mix-blend-multiply"
+            className="w-full h-full object-cover grayscale contrast-150 mix-blend-multiply group-hover:mix-blend-normal group-hover:grayscale-0 group-hover:contrast-100 group-hover:scale-105 transition-all duration-500 ease-out"
           />
 
           {/* Placeholder cuando no está cargada la foto */}
@@ -92,7 +92,7 @@ export default function Hero() {
             <span className="text-sm font-medium tracking-widest uppercase opacity-80">RODRIGO GÓMEZ</span>
             <div className="space-y-2">
               <p className="text-2xl font-bold">Foto a sangre con duotono azul</p>
-              <p className="text-xs font-sans opacity-80">Guardá tu imagen como <code className="bg-white/20 px-1">profile.jpg</code> en <code className="bg-white/20 px-1">/public</code>.</p>
+              <p className="text-xs font-sans opacity-80">Guardá tu imagen como <code className="bg-white/20 px-1">profile.png</code> en <code className="bg-white/20 px-1">/public</code>.</p>
             </div>
           </div>
         </motion.div>
