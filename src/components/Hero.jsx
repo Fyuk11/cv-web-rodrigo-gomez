@@ -78,14 +78,16 @@ export default function Hero() {
           className="lg:col-span-5 bg-accent min-h-[380px] lg:min-h-full relative overflow-hidden flex items-end justify-center rounded-bl-[72px] group cursor-pointer"
         >
           <img
-            src="/profile.png"
-            alt="Rodrigo Gómez"
-            onError={(e) => {
-              e.target.style.display = 'none';
-              e.target.nextSibling.style.display = 'flex';
-            }}
-            className="w-full h-full object-cover grayscale contrast-150 mix-blend-multiply group-hover:mix-blend-normal group-hover:grayscale-0 group-hover:contrast-100 group-hover:scale-105 transition-all duration-500 ease-out"
-          />
+          src="/profile.png"
+          alt="Rodrigo Gómez"
+          fetchPriority="high"
+          loading="eager"
+          onError={(e) => {
+            e.target.style.display = 'none';
+            e.target.nextSibling.style.display = 'flex';
+          }}
+          className="w-full h-full object-cover grayscale contrast-150 mix-blend-multiply group-hover:mix-blend-normal group-hover:grayscale-0 group-hover:contrast-100 group-hover:scale-105 transition-all duration-500 ease-out"
+        />
 
           {/* Placeholder cuando no está cargada la foto */}
           <div className="hidden w-full h-full p-8 flex-col justify-between font-display text-white">

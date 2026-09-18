@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -8,6 +9,14 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 export default function App() {
+  // Forzar el inicio de la página arriba de todo al recargar
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-bg text-text selection:bg-accent selection:text-white flex flex-col justify-between">
       <div>
