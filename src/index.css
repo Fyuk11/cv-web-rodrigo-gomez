@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root[data-theme="light"] {
+  --bg: #F5F4F0;
+  --surface: #FFFFFF;
+  --text: #111111;
+  --text-muted: #5B5B57;
+  --accent: #4c61ea;        /* Azul cobalto más sobrio */
+  --line: #111111;
+  --border: rgba(17, 17, 17, 0.12);
+}
+
+:root[data-theme="dark"] {
+  --bg: #121214;
+  --surface: #1B1B1F;
+  --text: #F2F1ED;
+  --text-muted: #A6A6A0;
+  --accent: #4865FF;        /* Azul desaturado, suave para la vista */
+  --line: #F2F1ED;
+  --border: rgba(242, 241, 237, 0.14);
+}
+
+/* Trama técnica sutil exclusiva para Stack */
+.bg-grid-pattern {
+  background-image: radial-gradient(var(--border) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+}
