@@ -46,42 +46,42 @@ export const portfolioData = {
         title: "Traducción Creativa",
         description: "Sitio oficial de estudio digital. Desarrollo web acelerado por IA, copywriting persuasivo y landing pages de alta conversión.",
         url: "https://traduccioncreativa.com/",
-        image: "/projects/traducción-creativa.png" // Guardá la captura acá en /public/projects/
+        image: "/projects/traducción-creativa.webp" // Guardá la captura acá en /public/projects/
       },
       {
         id: "portfolio-tc",
         title: "Traducción Creativa — Showcase",
         description: "Catálogo de experiencias interactivas y proyectos desarrollados para marcas y clientes del estudio.",
         url: "https://portfolio-traduccion-creativa.netlify.app/",
-        image: "/projects/portfolio-traduccion-creativa.png"
+        image: "/projects/portfolio-traduccion-creativa.webp"
       },
       {
         id: "wakeup",
         title: "WakeUp — Experiencia Digital",
         description: "Diseño web 3D interactivo con Framer Motion y estética futurista.",
         url: "https://eyewakeup.netlify.app",
-        image: "/projects/eyewakeup.png"
+        image: "/projects/eyewakeup.webp"
       },
       {
         id: "scrollytelling",
         title: "Scrollytelling Landing",
         description: "Landing con storytelling basado en scroll y animaciones progresivas.",
         url: "https://scrollytelling-interactive-landing.netlify.app",
-        image: "/projects/scrollytelling.png"
+        image: "/projects/scrollytelling.webp"
       },
       {
         id: "lumina-z",
         title: "Lumina Z — Creative Studio",
         description: "Sitio de marca para un estudio creativo, diseño editorial y minimalista.",
         url: "https://lumina-z.netlify.app",
-        image: "/projects/lumina.png"
+        image: "/projects/lumina.webp"
       },
       {
         id: "desde-el-vinculo",
         title: "Desde el Vínculo",
         description: "Ecosistema digital completo para marca de educación canina: sitio, landings y checkout con Hotmart.",
         url: "https://desdeelvinculo.netlify.app",
-        image: "/projects/desde-el-vinculo.png"
+        image: "/projects/desde-el-vinculo.webp"
       }
     ],
   

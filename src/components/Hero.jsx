@@ -34,7 +34,7 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* Detalle Suave #4: Botones CTA segmentados (radio 4px en extremos externos) */}
+          {/* Detalle Suave #4: Botones CTA segmentados */}
           <div className="flex items-center">
             <a
               href="#proyectos"
@@ -52,7 +52,7 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Detalle Suave #2: 3 Tarjetas de Stats con radio 10px */}
+          {/* Detalle Suave #2: 3 Tarjetas de Stats */}
           <div className="grid grid-cols-3 gap-3 pt-4">
             <div className="border border-border bg-surface p-4 rounded-[10px] text-center space-y-1">
               <span className="block font-display text-xl sm:text-2xl font-medium text-text">+15K</span>
@@ -70,7 +70,6 @@ export default function Hero() {
         </motion.div>
 
         {/* Columna Derecha: Foto Duotono y Fondo Accent */}
-        {/* Detalle Suave #3: Radio de 72px SOLO en la esquina inferior izquierda con efecto Hover Reveal */}
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -78,23 +77,27 @@ export default function Hero() {
           className="lg:col-span-5 bg-accent min-h-[380px] lg:min-h-full relative overflow-hidden flex items-end justify-center rounded-bl-[72px] group cursor-pointer"
         >
           <img
-          src="/profile.png"
-          alt="Rodrigo Gómez"
-          fetchPriority="high"
-          loading="eager"
-          onError={(e) => {
-            e.target.style.display = 'none';
-            e.target.nextSibling.style.display = 'flex';
-          }}
-          className="w-full h-full object-cover grayscale contrast-150 mix-blend-multiply group-hover:mix-blend-normal group-hover:grayscale-0 group-hover:contrast-100 group-hover:scale-105 transition-all duration-500 ease-out"
-        />
+            src="/profile.webp"
+            alt="Rodrigo Gómez"
+            width={800}
+            height={800}
+            fetchPriority="high"
+            loading="eager"
+            onError={(e) => {
+              e.target.style.display = 'none';
+              if (e.target.nextSibling) {
+                e.target.nextSibling.style.display = 'flex';
+              }
+            }}
+            className="w-full h-full object-cover grayscale contrast-150 mix-blend-multiply group-hover:mix-blend-normal group-hover:grayscale-0 group-hover:contrast-100 group-hover:scale-105 transition-all duration-500 ease-out"
+          />
 
           {/* Placeholder cuando no está cargada la foto */}
           <div className="hidden w-full h-full p-8 flex-col justify-between font-display text-white">
             <span className="text-sm font-medium tracking-widest uppercase opacity-80">RODRIGO GÓMEZ</span>
             <div className="space-y-2">
               <p className="text-2xl font-bold">Foto a sangre con duotono azul</p>
-              <p className="text-xs font-sans opacity-80">Guardá tu imagen como <code className="bg-white/20 px-1">profile.png</code> en <code className="bg-white/20 px-1">/public</code>.</p>
+              <p className="text-xs font-sans opacity-80">Guardá tu imagen como <code className="bg-white/20 px-1">profile.webp</code> en <code className="bg-white/20 px-1">/public</code>.</p>
             </div>
           </div>
         </motion.div>
