@@ -18,7 +18,7 @@ export const portfolioData = {
       email: "rodrigogomez.digital@gmail.com", // Modificá si preferís otro
       linkedin: "https://www.linkedin.com/in/rodrigo-gomez-digital/",
       github: "https://github.com/rodrigogomez", // Modificá con tu usuario de GitHub
-      cvPdfPath: "/CV_Rodrigo_Gomez.pdf", // apunta directo a la carpeta public
+      cvPdfPath: "/Rodrigo_Gomez_CV.pdf", // apunta directo a la carpeta public
     },
   
     about: {
